@@ -6,7 +6,9 @@
 
 
     <p>
-        prueba
+        {% for libro in libreria -%}
+		        	<li><a href="/libro/{{libro.isbn}}">{{libro.title}}</a></li>
+		{% endfor -%}
 
     </p>
 
