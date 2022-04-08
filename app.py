@@ -17,8 +17,10 @@ def libro_dinamico(isbn):
             nombre = libro.get("title")
             imagen = libro.get("thumbnailUrl")
             paginas = libro.get("pageCount")
+            autores = libro.get("authors")
             descripcion = libro.get("shortDescription")
-            return render_template("libro.html",nombre=nombre,imagen=imagen,paginas=paginas,descripcion=descripcion,isbn=isbn)
+            categorias = libro.get("categories")
+            return render_template("libro.html",nombre=nombre,imagen=imagen,paginas=paginas,autores=autores,descripcion=descripcion,categorias=categorias,isbn=isbn)
     return abort(404)
 
 

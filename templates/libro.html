@@ -9,9 +9,22 @@
         <ul>
             <li>Número de páginas: {{paginas}}</li>
             <li>Descripción: {{descripcion}}</li>
-            <li>Autores: </li>
-            <li>Categorias: </li>
+            <li>Autores: 
+                <ul>
+                    {% for autor in autores -%}
+		        	    <li>{{autor}}</li>
+		            {% endfor -%}
+                </ul>
+            </li>
+            <li>Categorías: 
+                <ul>
+                    {% for categoria in categorias -%}
+		        	    <li>{{categoria}}</li>
+		            {% endfor -%}
+                </ul>
+            </li>
         </ul>
+        <a href="../">Volver</a>
     </p>
 
 </div>
