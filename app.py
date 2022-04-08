@@ -1,4 +1,8 @@
 from flask import Flask, render_template, request
+from funciones import LeerLibreria
+
+libreria = LeerLibreria()
+
 app = Flask(__name__)	
 
 @app.route('/')
