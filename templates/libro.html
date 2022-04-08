@@ -2,14 +2,16 @@
 {% block title %}Roberto Rodríguez Márquez{% endblock %}
 {% block content %}
 <div class="posts">
-    <h1>BIBLIOTECA</h1>
-
-
+    <h1>{{nombre}}</h1>
+    <img src="{{imagen}}">
+    
     <p>
-        {% for libro in libreria -%}
-		        	<li><a href="/libro/{{libro.isbn}}">{{libro.title}}</a></li>
-		{% endfor -%}
-
+        <ul>
+            <li>Número de páginas: {{paginas}}</li>
+            <li>Descripción: {{descripcion}}</li>
+            <li>Autores: </li>
+            <li>Categorias: </li>
+        </ul>
     </p>
 
 </div>
