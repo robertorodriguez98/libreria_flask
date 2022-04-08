@@ -7,8 +7,6 @@
     
     <p>
         <ul>
-            <li>Número de páginas: {{paginas}}</li>
-            <li>Descripción: {{descripcion}}</li>
             <li>Autores: 
                 <ul>
                     {% for autor in autores -%}
@@ -16,13 +14,20 @@
 		            {% endfor -%}
                 </ul>
             </li>
-            <li>Categorías: 
-                <ul>
-                    {% for categoria in categorias -%}
-		        	    <li>{{categoria}}</li>
-		            {% endfor -%}
-                </ul>
-            </li>
+            
+            {% if publicado == "MEAP" %}
+                <li> ESTE LIBRO NO SE HA PUBLICADO </li>
+            {% else %}
+                <li>Número de páginas: {{paginas}}</li>
+                <li>Descripción: {{descripcion}}</li>
+                <li>Categorías: 
+                    <ul>
+                        {% for categoria in categorias -%}
+                            <li>{{categoria}}</li>
+                        {% endfor -%}
+                    </ul>
+                </li>
+            {% endif %}
         </ul>
         <a href="../">Volver</a>
     </p>
