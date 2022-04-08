@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Roberto Rodríguez Márquez{% endblock %}
+{% block content %}
+<div class="posts">
+    <h1>BIBLIOTECA</h1>
+
+
+    <p>
+        {% for libro in libreria -%}
+		        	<li><a href="/libro/{{libro.isbn}}">{{libro.title}}</a></li>
+		{% endfor -%}
+
+    </p>
+
+</div>
+{% endblock %}
