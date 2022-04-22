@@ -1,5 +1,4 @@
 # Programa librería
-<object data="https://img.shields.io/badge/flask-v2.1.1-blue"></object> <object data="https://img.shields.io/badge/python-v3.9.2-yellow"></object>
 Aplicación dinámica utilizando python flask  con las siguientes características:
 * Utiliza la plantilla Surogou de [https://www.free-css.com/free-css-templates/page260/surogou]()
 * Muestra la información del fichero [books](books.json)
@@ -8,3 +7,10 @@ Aplicación dinámica utilizando python flask  con las siguientes característic
     * Si el ISBN no existe se devolverá un error 404.
     * Si el valor del campo status es igual a MEAP muestra un mensaje que diga "ESTE LIBRO NO SE HA PUBLICADO".
 
+## Capturas de pantalla
+* Página principal:
+![](capturas/biblioteca.png)
+* Página de un libro:
+![](capturas/libro.png)
+* Página de un libro sin publicar:
+![](capturas/libro2.png)
